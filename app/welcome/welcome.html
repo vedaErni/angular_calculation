@@ -1,0 +1,24 @@
+<div class="center" ng-controller="WelcomeCtrl as wCtrl">
+    <h1>Welcome on calculation loan page</h1>
+    <a class="button center" href="#!/calculation">Go on calculation page</a>
+    <div>
+        <h2>Custom validation for strong password with directive</h2>
+        <form name="sampleForm">
+            <input name="strongSecret" type="text" ng-model="strongSecret" strong-password
+                   placeholder="Please provide strong secret" class="passwordField">
+            <ul class="error-msgs" ng-messages="sampleForm.strongSecret.$error">
+                <li ng-message="numberValidator">Strong secret has to contain at least 1 number</li>
+                <li ng-message="uppercaseValidator">Strong secret has to contain at least 1 uppercase</li>
+                <li ng-message="sixCharactersValidator">Strong secret has to be exactly 6 characters long</li>
+            </ul>
+
+            <p>
+                <h2>On Change example</h2>
+                Init : {{wCtrl.initialData}};
+            </p>
+            <input type="submit" ng-click="wCtrl.sayHello()"/>
+            <input type="text" ng-change="wCtrl.myFunc()" ng-model="wCtrl.initialData"/>
+        </form>
+
+    </div>
+</div>
