@@ -1,15 +1,16 @@
 'use strict';
 
-describe('myApp.calculation module', function() {
+describe('myApp.welcome module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('myApp.welcome'));
 
-  describe('view1 controller', function(){
+  describe('welcome controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      var view1Ctrl = $controller('View1Ctrl');
+      var view1Ctrl = $controller('WelcomeCtrl');
       expect(view1Ctrl).toBeDefined();
+
     }));
 
   });

@@ -23,13 +23,13 @@ angular.module('myApp.calculation', [])
     }])
 
     .controller('CalculationCtrl', ['Calculator', function (Calculator) {
-        this.calResult = 0;
+        this.calculationResult = 0;
         this.loanAmount = 0;
         this.downPayment = 0;
         this.interestRate = 0;
 
         this.calculate = function () {
-            this.calResult = Calculator.payment(this.loanAmount, this.downPayment, this.interestRate);
+            this.calculationResult = Calculator.payment(this.loanAmount, this.downPayment, this.interestRate);
         };
     }])
     .directive('validationp', function () {

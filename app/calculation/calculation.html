@@ -4,8 +4,8 @@
     <label>Loan amount <input type="text" ng-model='calCtrl.loanAmount' required> </label>
     <label>Down payment years <input type="text" ng-model='calCtrl.downPayment' required> </label>
     <label>Interest rate <input type="text" ng-model='calCtrl.interestRate'> </label>
-    <input type="submit" ng-click="calCtrl.calculate()";
+    <input type="submit" ng-click="calCtrl.calculate()">
   </form>
-  <h3>Monthly payment {{calCtrl.calResult}}</h3>
+  <h3>Monthly payment {{calCtrl.calculationResult}}</h3>
   <a class="button" href="#!/welcome">Back to welcome page</a>
 </div>
